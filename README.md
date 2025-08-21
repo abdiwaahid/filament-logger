@@ -27,6 +27,7 @@ Note: By default this package will log Filament Resource Events, Access(Login) E
 | Plugin Version | Filament Version |
 |----------------|------------------|
 | 1.x            | 3.x              |
+| 2.x            | 4.x              |
 
 This package uses [spatie/laravel-activitylog](https://spatie.be/docs/laravel-activitylog), instructions for its setup can be found [here](https://spatie.be/docs/laravel-activitylog/v4/installation-and-setup)
 
@@ -42,7 +43,7 @@ php artisan filament-logger:install
 ```
 This will publish the config & migrations from `spatie/laravel-activitylog`
 
-For Filament v3, you need to register a resource in PanelProvider
+For Filament v3+, you need to register a resource in PanelProvider
 ```php
 public function panel(Panel $panel): Panel
 {
