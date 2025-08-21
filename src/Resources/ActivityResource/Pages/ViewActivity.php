@@ -1,6 +1,6 @@
 <?php
 
-namespace Z3d0X\FilamentLogger\Resources\ActivityResource\Pages;
+namespace Abdiwaahid\FilamentLogger\Resources\ActivityResource\Pages;
 
 use Filament\Resources\Pages\ViewRecord;
 
