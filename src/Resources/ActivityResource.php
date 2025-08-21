@@ -25,13 +25,15 @@ use Spatie\Activitylog\Contracts\Activity;
 use Spatie\Activitylog\ActivitylogServiceProvider;
 use Spatie\Activitylog\Models\Activity as ActivityModel;
 use Abdiwaahid\FilamentLogger\Resources\ActivityResource\Pages;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Support\Icons\Heroicon;
 
 class ActivityResource extends Resource
 {
     protected static ?string $label = 'Activity Log';
     protected static ?string $slug = 'activity-logs';
 
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-clipboard-list';
+    protected static string | \BackedEnum | null $navigationIcon = Heroicon::ClipboardDocumentList;
 
 
     public static function getCluster(): ?string
@@ -70,23 +72,23 @@ class ActivityResource extends Resource
 
                 Group::make([
                     Section::make([
-                        Placeholder::make('log_name')
-                            ->content(function (?Model $record): string {
+                        TextEntry::make('log_name')
+                            ->state(function (?Model $record): string {
                                 /** @var Activity&ActivityModel $record */
                                 return $record->log_name ? ucwords($record->log_name) : '-';
                             })
                             ->label(__('filament-logger::filament-logger.resource.label.type')),
 
-                        Placeholder::make('event')
-                            ->content(function (?Model $record): string {
+                        TextEntry::make('event')
+                            ->state(function (?Model $record): string {
                                 /** @phpstan-ignore-next-line */
                                 return $record?->event ? ucwords($record?->event) : '-';
                             })
                             ->label(__('filament-logger::filament-logger.resource.label.event')),
 
-                        Placeholder::make('created_at')
+                        TextEntry::make('created_at')
                             ->label(__('filament-logger::filament-logger.resource.label.logged_at'))
-                            ->content(function (?Model $record): string {
+                            ->state(function (?Model $record): string {
                                 /** @var Activity&ActivityModel $record */
                                 return $record->created_at ? "{$record->created_at->format(config('filament-logger.datetime_format', 'd/m/Y H:i:s'))}" : '-';
                             }),
