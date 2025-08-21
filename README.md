@@ -7,7 +7,7 @@
   <img alt="logger banner" src="https://raw.githubusercontent.com/abdiwaahid/filament-logger/1.x/art/banner.jpeg" />
 </p>
 
-> **Note**: This is a maintained fork of [Z3d0X/filament-logger](https://github.com/Z3d0X/filament-logger), starting from version `1.0.0`. This fork aims to continue development and maintenance of the original package.
+> **Note**: This is a maintained fork of [Z3d0X/filament-logger](https://github.com/Z3d0X/filament-logger), starting from version `1.0`. This fork aims to continue development and maintenance of the original package.
 
 Configurable activity logger for filament.
 Powered by `spatie/laravel-activitylog`
@@ -26,8 +26,7 @@ Note: By default this package will log Filament Resource Events, Access(Login) E
 
 | Plugin Version | Filament Version |
 |----------------|------------------|
-| 1.x            | 3.x              |
-| 2.x            | 4.x              |
+| 1.x            | 4.x              |
 
 This package uses [spatie/laravel-activitylog](https://spatie.be/docs/laravel-activitylog), instructions for its setup can be found [here](https://spatie.be/docs/laravel-activitylog/v4/installation-and-setup)
 
