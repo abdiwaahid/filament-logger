@@ -96,6 +96,7 @@ class ActivityResource extends Resource
                 ]),
                 Section::make()
                     ->columns()
+                    ->columnSpanFull()
                     ->visible(fn ($record) => $record->properties?->count() > 0)
                     ->schema(function (?Model $record) {
                         /** @var Activity&ActivityModel $record */
