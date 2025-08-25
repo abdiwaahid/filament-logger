@@ -3,10 +3,6 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/abdiwaahid/filament-logger.svg?style=for-the-badge)](https://packagist.org/packages/abdiwaahid/filament-logger)
 [![Total Downloads](https://img.shields.io/packagist/dt/abdiwaahid/filament-logger.svg?style=for-the-badge)](https://packagist.org/packages/abdiwaahid/filament-logger)
 
-<p align="center" class="filament-hidden">
-  <img alt="logger banner" src="https://raw.githubusercontent.com/abdiwaahid/filament-logger/1.x/art/banner.jpeg" />
-</p>
-
 > **Note**: This is a maintained fork of [Z3d0X/filament-logger](https://github.com/Z3d0X/filament-logger), starting from version `1.0`. This fork aims to continue development and maintenance of the original package.
 
 Configurable activity logger for filament.
