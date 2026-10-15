@@ -28,4 +28,24 @@ return [
     'resource.label.properties_hint' => 'Can be key or value',
     'resource.label.old_attributes' => 'Old Attribute or Value: ',
     'resource.label.new_attributes' => 'New Attribute or Value: ',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Filters & Tabs
+    |--------------------------------------------------------------------------
+    */
+
+    'tabs.all' => 'All',
+    'filter.period' => 'Period',
+    'filter.from' => 'From',
+    'filter.until' => 'Until',
+    'filter.preset.today' => 'Today',
+    'filter.preset.yesterday' => 'Yesterday',
+    'filter.preset.last_7_days' => 'Last 7 days',
+    'filter.preset.last_30_days' => 'Last 30 days',
+    'filter.preset.this_month' => 'This month',
+    'filter.indicator.preset' => 'Period: :period',
+    'filter.indicator.from' => 'From :date',
+    'filter.indicator.until' => 'Until :date',
+    'filter.indicator.causer' => 'User: :name',
 ];

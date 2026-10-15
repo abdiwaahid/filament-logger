@@ -5,6 +5,8 @@ namespace Abdiwaahid\FilamentLogger;
 use Filament\Facades\Filament;
 use Filament\Panel;
 use Illuminate\Auth\Events\Login;
+use Illuminate\Auth\Events\Logout;
+use Illuminate\Auth\Events\Failed;
 use Illuminate\Notifications\Events\NotificationFailed;
 use Illuminate\Notifications\Events\NotificationSent;
 use Illuminate\Support\Facades\Event;
@@ -47,6 +49,8 @@ class FilamentLoggerServiceProvider extends PackageServiceProvider
 
         if (config('filament-logger.access.enabled')) {
             Event::listen(Login::class, config('filament-logger.access.logger'));
+            Event::listen(Logout::class, config('filament-logger.access.logger'));
+            Event::listen(Failed::class, config('filament-logger.access.logger'));
         }
 
         if (config('filament-logger.notifications.enabled')) {

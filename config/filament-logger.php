@@ -50,4 +50,26 @@ return [
         //     'color' => 'primary',
         // ]
     ],
+
+    'filters' => [
+        // Model used by the "User" filter. Defaults to the user model of the
+        // `users` auth provider (auth.providers.users.model).
+        'causer_model' => null,
+
+        // Column of the causer model searched by the "User" filter.
+        'causer_search_column' => 'name',
+
+        // Seconds the distinct log names, events and subject types offered by the
+        // filters are cached for. Set to 0 to always query the database.
+        'options_cache_ttl' => 60,
+    ],
+
+    'tabs' => [
+        // Show one tab per enabled log type (plus "All") above the table.
+        'enabled' => true,
+    ],
+
+    'widgets' => [
+        \Abdiwaahid\FilamentLogger\Widgets\ActivityTrendChart::class,
+    ],
 ];

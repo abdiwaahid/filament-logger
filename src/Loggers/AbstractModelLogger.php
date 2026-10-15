@@ -7,6 +7,7 @@ use Illuminate\Auth\GenericUser;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Auth;
 use Spatie\Activitylog\ActivityLogger;
 use Spatie\Activitylog\ActivityLogStatus;
 
@@ -29,7 +30,7 @@ abstract class AbstractModelLogger
     }
 
 
-    protected function activityLogger(string $logName = null): ActivityLogger
+    protected function activityLogger(?string $logName = null): ActivityLogger
     {
         $defaultLogName = $this->getLogName();
 
@@ -63,8 +64,8 @@ abstract class AbstractModelLogger
             $description = $this->getModelName($model).' '.$event;
         }
 
-        if (auth()->check()) {
-            $description .= ' by '.$this->getUserName(auth()->user());
+        if (Auth::check()) {
+            $description .= ' by '.$this->getUserName(Auth::user());
         }
 
         $this->activityLogger()
