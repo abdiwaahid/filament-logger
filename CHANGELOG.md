@@ -23,14 +23,7 @@ All notable changes to `filament-logger` will be documented in this file.
 
 ## v1.4.0 - 2026-10-15
 
-### Added
-
-- Laravel 13 support (`illuminate/contracts ^13.0`), tested with Testbench 11, Pest 4 and PHPUnit 12
-
-### Changed
-
-- CI now tests Laravel 11, 12 and 13 across PHP 8.2, 8.3 and 8.4
-- Migrated `phpunit.xml.dist` to the current PHPUnit schema and dropped the in-config coverage report so Pest 4 runs without a coverage driver
+- Laravel 13 support (requires PHP 8.3+)
 
 ## v1.2.0 - 2026-02-25
 
