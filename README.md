@@ -21,10 +21,14 @@ Note: By default this package will log Filament Resource Events, Access(Login) E
 
 ## Installation
 
-| Plugin Version | Filament Version |
-|----------------|------------------|
-| 1.0.x - 1.1.x  | 4.x              |
-| 1.2.x and up   | 5.x              |
+| Plugin Version | Filament Version | Laravel Version |
+|----------------|------------------|-----------------|
+| 1.0.x - 1.1.x  | 4.x              | 8.x - 12.x      |
+| 1.2.x          | 5.x              | 8.x - 12.x      |
+| 1.3.x          | 5.x              | 11.x - 12.x     |
+| 1.4.x and up   | 5.x              | 11.x - 13.x     |
+
+Laravel 13 support requires PHP 8.3 or higher.
 
 This package uses [spatie/laravel-activitylog](https://spatie.be/docs/laravel-activitylog), instructions for its setup can be found [here](https://spatie.be/docs/laravel-activitylog/v4/installation-and-setup)
 
