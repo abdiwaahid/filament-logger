@@ -2,6 +2,10 @@
 
 All notable changes to `filament-logger` will be documented in this file.
 
+## v1.4.0 - 2026-10-15
+
+- Laravel 13 support (requires PHP 8.3+)
+
 ## v1.3.0 - 2026-10-15
 
 ### Added
@@ -20,10 +24,6 @@ All notable changes to `filament-logger` will be documented in this file.
 - The type and subject type filters now allow selecting several values
 - The type, event and subject type options now include the values already stored in the table, not only the configured ones; the subject type options also include `models.register`
 - The single-day "Logged at" filter was replaced by a range filter (its `logged_at` field is now `from` / `until`)
-
-## v1.4.0 - 2026-10-15
-
-- Laravel 13 support (requires PHP 8.3+)
 
 ## v1.2.0 - 2026-02-25
 
